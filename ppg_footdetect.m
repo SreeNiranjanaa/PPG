@@ -27,15 +27,8 @@ I1 = find(diff1 < 0.8*(mean1-std1));
 x = find(diff(pin)<50);
 pin(x+1)=[];
 pamp(x+1)=[];
-%     % Second Derivative
-%     P_D2 = derivative(ppg,2);
-% 
-%     % Filtering of Acceleration PPG
-%     [z1,p1] = butter(4,0.08,'low');
-%     ppg_acc = filtfilt(z1,p1,P_D2);
-% %  
-    
-    % To Find the PPG Base point with Interval range of Two ECG Peaks
+
+% To Find the PPG Base point with Interval range of Two ECG Peaks
 if pin(1)>thresh
     for i = 1:length(pin)
         rng2 = [pin(i)-thresh:pin(i)];
