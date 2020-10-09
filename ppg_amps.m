@@ -1,6 +1,5 @@
 function [sysamp,diasamp] = ppg_amps(ppg_sig,Fs)
-% ppg_amps computes the photoplethysmographic systolic and 
-% diastolic amplitude
+% ppg_amps computes the photoplethysmographic systolic and diastolic amplitude
 % sysamp is the systolic peak amp - foot point amp
 % diasamp is the diastolic peak amp - foot point amp
 
